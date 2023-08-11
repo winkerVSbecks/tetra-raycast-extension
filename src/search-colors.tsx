@@ -1,7 +1,6 @@
 import { Action, ActionPanel, Grid } from "@raycast/api";
 import { color } from "@chromaui/tetra";
 import { styles } from "@storybook/design-system";
-import { capitalize } from "lodash";
 
 const oldColors = styles.color;
 
@@ -35,7 +34,7 @@ export default function SearchColors() {
   return (
     <Grid searchBarPlaceholder="Search colors by name and shade..." columns={4}>
       {Object.entries(colorGroups).map(([name, shades]) => (
-        <Grid.Section key={name} title={capitalize(name)} fit={Grid.Fit.Fill}>
+        <Grid.Section key={name} title={name} fit={Grid.Fit.Fill}>
           {shades.map(({ shade, value, oldName }) => (
             <Grid.Item
               key={shade}

@@ -9,24 +9,34 @@ const oldTokens = {
   body16: "marketing.textLarge",
   heading16: "marketing.textLargeBold",
   body14: "marketing.textSmall",
-} as any;
+};
 
-const typographyStyles = Object.entries(typography).map(([name, value]) => ({
+interface TypographyStyle {
+  name: string;
+  value: string;
+  styles: string[][];
+  oldToken?: string;
+}
+
+const typographyStyles: TypographyStyle[] = Object.entries(typography).map(([name, value]) => ({
   name,
   value,
   styles: value.styles
     .trim()
     .split(/\r?\n|\r|\n/g)
-    .map((style: string) => style.trim().split(":")),
-  oldTokens: oldTokens[name],
+    .map((style: string) =>
+      style
+        .trim()
+        .split(":")
+        .map((s: string) => s.replace(";", ""))
+    ),
+  oldToken: oldTokens[name as keyof typeof oldTokens],
 }));
-
-console.log(typographyStyles[0]);
 
 export default function SearchTypographyStyles() {
   return (
     <List isShowingDetail>
-      {typographyStyles.map(({ name, styles }) => {
+      {typographyStyles.map(({ name, styles, oldToken }) => {
         return (
           <List.Item
             key={name}
@@ -35,11 +45,15 @@ export default function SearchTypographyStyles() {
               <List.Item.Detail
                 metadata={
                   <List.Item.Detail.Metadata>
-                    {styles.map(([key, value]: [string, string]) => (
+                    {styles.map(([key, value]) => (
                       <List.Item.Detail.Metadata.Label key={key} title={key} text={value} />
                     ))}
-                    <List.Item.Detail.Metadata.Separator />
-                    <List.Item.Detail.Metadata.Label title="Old Token" text={"something"} />
+                    {oldToken && (
+                      <>
+                        <List.Item.Detail.Metadata.Separator />
+                        <List.Item.Detail.Metadata.Label title="Old Token" text={oldToken} />
+                      </>
+                    )}
                   </List.Item.Detail.Metadata>
                 }
               />
