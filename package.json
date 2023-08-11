@@ -1,0 +1,107 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "tetra-raycast-extension",
+  "title": "Tetra",
+  "description": "Utilities to work with Tetra",
+  "icon": "tetra-icon.png",
+  "author": "winkerVSbecks",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "search-colors",
+      "title": "Search Colors",
+      "subtitle": "Tetra",
+      "keywords": [
+        "css"
+      ],
+      "description": "Search Tetra color tokens",
+      "mode": "view"
+    },
+    {
+      "name": "search-breakpoints",
+      "title": "Search Breakpoints",
+      "subtitle": "Tetra",
+      "keywords": [
+        "breakpoint",
+        "media query"
+      ],
+      "description": "Search Tetra breakpoint tokens",
+      "mode": "view"
+    },
+    {
+      "name": "search-typography-tokens",
+      "title": "Search Typography tokens",
+      "subtitle": "Tetra",
+      "keywords": [
+        "typography",
+        "font",
+        "family",
+        "weight",
+        "size",
+        "line height"
+      ],
+      "description": "Search Tetra typography tokens",
+      "mode": "view"
+    },
+    {
+      "name": "search-typography-styles",
+      "title": "Search Typography styles",
+      "subtitle": "Tetra",
+      "keywords": [
+        "typography",
+        "font",
+        "family",
+        "weight",
+        "size",
+        "line height"
+      ],
+      "description": "Search Tetra typography styles",
+      "mode": "view"
+    },
+    {
+      "name": "search-spacing",
+      "title": "Search Spacing tokens",
+      "subtitle": "Tetra",
+      "keywords": [
+        "spacing",
+        "margin",
+        "padding"
+      ],
+      "description": "Search Tetra spacing tokens",
+      "mode": "view"
+    }
+  ],
+  "categories": [
+    "Documentation",
+    "Developer Tools"
+  ],
+  "dependencies": {
+    "@chromaui/tetra": "^1.15.5",
+    "@raycast/api": "^1.44.0",
+    "@storybook/design-system": "^7.15.15",
+    "@storybook/theming": "^7.2.2",
+    "color-convert": "^2.0.1",
+    "css": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/color-convert": "^2.0.0",
+    "@types/css": "^0.0.33",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
