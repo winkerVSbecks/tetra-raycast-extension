@@ -10,7 +10,8 @@ This extension is not published, so you need to clone the repository and build i
 
 1. Install dependencies `npm install`
 2. Build the extension `npm run build`
-3. Install the extension in Raycast `npm run build`
+3. Install the extension in Raycast `npm run dev`
+4. You can stop the `dev` task, the extension will still be installed.
 
 ## Developing
 
