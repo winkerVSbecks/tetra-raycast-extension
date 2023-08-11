@@ -1,8 +1,42 @@
 import { Action, ActionPanel, Grid } from "@raycast/api";
 import { color } from "@chromaui/tetra";
-import { styles } from "@storybook/design-system";
 
-const oldColors = styles.color;
+const oldColors = {
+  "background.app": "#F6F9FC",
+  "background.appInverse": "#7A8997",
+  "background.positive": "#E1FFD4",
+  "background.negative": "#FEDED2",
+  "background.warning": "#FFF5CF",
+  "background.calmBlue": "#E3F3FF",
+  primary: "#FF4785",
+  secondary: "#029CFD",
+  tertiary: "#E3E6E8",
+  orange: "#FC521F",
+  gold: "#FFAE00",
+  green: "#66BF3C",
+  seafoam: "#37D5D3",
+  purple: "#6F2CAC",
+  ultraviolet: "#2A0481",
+  red: "#ff4400",
+  bluelight: "#E3F3FF",
+  bluelighter: "#F5FBFF",
+  lightest: "#FFFFFF",
+  lighter: "#F7FAFC",
+  light: "#EEF3F6",
+  mediumlight: "#ECF4F9",
+  medium: "#D9E8F2",
+  mediumdark: "#73828C",
+  dark: "#5C6870",
+  darker: "#454E54",
+  darkest: "#2E3438",
+  tr10: "rgba(0, 0, 0, 0.1)",
+  tr5: "rgba(0, 0, 0, 0.05)",
+  border: "hsla(203, 50%, 30%, 0.15)",
+  positive: "#448028",
+  negative: "#D43900",
+  warning: "#A15C20",
+  selected: "#0271B6",
+};
 
 const blackOrWhiteRegex = new RegExp(/(white|black)/);
 

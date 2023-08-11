@@ -3,7 +3,7 @@
   "name": "tetra-raycast-extension",
   "title": "Tetra",
   "description": "Utilities to work with Tetra",
-  "icon": "tetra-icon.png",
+  "icon": "tetra-icon-512.png",
   "author": "winkerVSbecks",
   "license": "MIT",
   "commands": [
@@ -30,7 +30,7 @@
     },
     {
       "name": "search-typography-tokens",
-      "title": "Search Typography tokens",
+      "title": "Search Typography Tokens",
       "subtitle": "Tetra",
       "keywords": [
         "typography",
@@ -45,7 +45,7 @@
     },
     {
       "name": "search-typography-styles",
-      "title": "Search Typography styles",
+      "title": "Search Typography Styles",
       "subtitle": "Tetra",
       "keywords": [
         "typography",
@@ -78,7 +78,6 @@
   "dependencies": {
     "@chromaui/tetra": "^1.15.5",
     "@raycast/api": "^1.44.0",
-    "@storybook/design-system": "^7.15.15",
     "@storybook/theming": "^7.2.2",
     "color-convert": "^2.0.1",
     "css": "^3.0.0",
