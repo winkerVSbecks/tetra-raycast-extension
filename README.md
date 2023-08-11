@@ -2,7 +2,7 @@
 
 Utilities to work with [@chromaui/tetra](https://github.com/chromaui/tetra).
 
-<video src="assets/tetra-raycast.mp4" controls style="max-width: 526px"></video>
+https://github.com/winkerVSbecks/tetra-raycast-extension/assets/42671/cbe2cf2b-4fdc-4641-9103-e003471c3739
 
 ## Install
 
