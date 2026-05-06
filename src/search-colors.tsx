@@ -1,5 +1,5 @@
 import { Action, ActionPanel, Grid } from "@raycast/api";
-import { color } from "@chromaui/tetra";
+import { color } from "@chromatic-com/tetra";
 
 const oldColors = {
   "background.app": "#F6F9FC",

@@ -1,5 +1,5 @@
 import { Action, ActionPanel, List } from "@raycast/api";
-import { breakpoint } from "@chromaui/tetra";
+import { breakpoint } from "@chromatic-com/tetra";
 
 export const oldBreakpoints = [440, 600, 900, 1200];
 

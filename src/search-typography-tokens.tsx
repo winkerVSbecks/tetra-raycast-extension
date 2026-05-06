@@ -1,5 +1,5 @@
 import { Action, ActionPanel, List } from "@raycast/api";
-import { fontFamily, fontSize, fontWeight, lineHeight } from "@chromaui/tetra";
+import { fontFamily, fontSize, fontWeight, lineHeight } from "@chromatic-com/tetra";
 
 export default function SearchTypographyTokens() {
   return (

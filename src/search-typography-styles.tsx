@@ -1,5 +1,5 @@
 import { Action, ActionPanel, List } from "@raycast/api";
-import { typography } from "@chromaui/tetra";
+import { typography } from "@chromatic-com/tetra";
 
 const oldTokens = {
   heading56: "marketing.hero1",

@@ -1,5 +1,5 @@
 import { Action, ActionPanel, List } from "@raycast/api";
-import { spacing } from "@chromaui/tetra";
+import { spacing } from "@chromatic-com/tetra";
 
 const spacingTokens = Object.entries(spacing)
   .map(([name, value]) => ({ name, level: parseFloat(name), value }))

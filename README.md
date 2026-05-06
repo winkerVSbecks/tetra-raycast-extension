@@ -1,6 +1,6 @@
 # Tetra Raycast extension
 
-Utilities to work with [@chromaui/tetra](https://github.com/chromaui/tetra).
+Utilities to work with [@chromatic-com/tetra](https://github.com/chromaui/tetra).
 
 https://github.com/winkerVSbecks/tetra-raycast-extension/assets/42671/cbe2cf2b-4fdc-4641-9103-e003471c3739
 
